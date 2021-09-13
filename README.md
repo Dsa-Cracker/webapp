@@ -6,7 +6,7 @@
 
 ### Table of Contents  
 - [Introduction](https://github.com/Dsa-Cracker/webapp#introduction)
-- [Installation](https://github.com/Dsa-Cracker/Webapp#installation)
+- [Installation](https://github.com/Dsa-Cracker/webapp#installation)
 
 ## Introduction
 Wanna learn Data structures and algorithms by solving problems? You are in the right place. Checkout the project!
