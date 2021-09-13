@@ -11,11 +11,11 @@
 ## Introduction
 Wanna learn Data structures and algorithms by solving problems? You are in the right place. Checkout the project!
 
-**You can Check the Website <a href='https://gravvity.in'>here</a>**
+**You can Check the Website <a href='https://dsa-cracker.herokuapp.com/'>here</a>**
 
 <img src='https://github.com/Dsa-Cracker/webapp/blob/main/Screenshot%20from%202021-09-13%2010-21-30.png?raw=true' width="1280" height="720"/>
 
-### Some stats about Gravvity:
+### Some stats about Dsa-Cracker Webapp:
 <ul>
   <li>Number of Questions: <b>450</b></li>
   <li>Number of topics: <b>13</b></li>
