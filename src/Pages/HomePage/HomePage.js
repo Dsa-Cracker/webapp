@@ -10,6 +10,7 @@ class HomePage extends React.Component {
 			password: "",
 			message: "",
 			loading: false,
+			code: "",
 		};
 	}
 
@@ -36,11 +37,21 @@ class HomePage extends React.Component {
 	};
 
 	handleSubmit = () => {
-		if (!this.state.email || !this.state.password)
+		if (!this.state.email || !this.state.password || !this.state.code)
 			return this.setState({
 				message: "Please fill all the details!",
 				email: "",
 				password: "",
+				code: "",
+			});
+
+		if (this.state.code !== "APSM1824")
+			return this.setState({
+				message: "Incorrect code",
+				loading: false,
+				email: "",
+				password: "",
+				code: "",
 			});
 
 		if (this.state.password.length < 6)
@@ -70,6 +81,7 @@ class HomePage extends React.Component {
 							message: data.error,
 							email: "",
 							password: "",
+							code: "",
 							loading: false,
 						});
 					}
@@ -139,6 +151,14 @@ class HomePage extends React.Component {
 							name="password"
 							onChange={this.handleChange}
 							value={this.state.password}
+						/>
+						<input
+							className="form__input"
+							placeholder="Coupon Code"
+							type="text"
+							name="code"
+							onChange={this.handleChange}
+							value={this.state.code}
 						/>
 						{this.state.loading ? (
 							<button
