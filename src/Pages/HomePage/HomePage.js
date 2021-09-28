@@ -152,14 +152,14 @@ class HomePage extends React.Component {
 							onChange={this.handleChange}
 							value={this.state.password}
 						/>
-// 						<input
-// 							className="form__input"
-// 							placeholder="Coupon Code"
-// 							type="text"
-// 							name="code"
-// 							onChange={this.handleChange}
-// 							value={this.state.code}
-// 						/>
+								{/*	<input
+							className="form__input"
+							placeholder="Coupon Code"
+							type="text"
+							name="code"
+							onChange={this.handleChange}
+							value={this.state.code}
+						/> */}
 						{this.state.loading ? (
 							<button
 								className="form__button"
