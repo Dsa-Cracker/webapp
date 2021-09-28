@@ -37,7 +37,7 @@ class HomePage extends React.Component {
 	};
 
 	handleSubmit = () => {
-		if (!this.state.email || !this.state.password || !this.state.code)
+		if (!this.state.email || !this.state.password)
 			return this.setState({
 				message: "Please fill all the details!",
 				email: "",
@@ -45,14 +45,14 @@ class HomePage extends React.Component {
 				code: "",
 			});
 
-		if (this.state.code !== "APSM1824")
-			return this.setState({
-				message: "Incorrect code",
-				loading: false,
-				email: "",
-				password: "",
-				code: "",
-			});
+// 		if (this.state.code !== "APSM1824")
+// 			return this.setState({
+// 				message: "Incorrect code",
+// 				loading: false,
+// 				email: "",
+// 				password: "",
+// 				code: "",
+// 			});
 
 		if (this.state.password.length < 6)
 			return this.setState({
@@ -152,14 +152,14 @@ class HomePage extends React.Component {
 							onChange={this.handleChange}
 							value={this.state.password}
 						/>
-						<input
-							className="form__input"
-							placeholder="Coupon Code"
-							type="text"
-							name="code"
-							onChange={this.handleChange}
-							value={this.state.code}
-						/>
+// 						<input
+// 							className="form__input"
+// 							placeholder="Coupon Code"
+// 							type="text"
+// 							name="code"
+// 							onChange={this.handleChange}
+// 							value={this.state.code}
+// 						/>
 						{this.state.loading ? (
 							<button
 								className="form__button"
