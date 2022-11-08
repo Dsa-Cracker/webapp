@@ -16,7 +16,7 @@ class HomePage extends React.Component {
 
 	componentDidMount() {
 		if (window.localStorage.getItem("token")) {
-			fetch("https://dsa-cracker-server.herokuapp.com/profile", {
+			fetch("https://dsa-cracker-server.netlify.app/profile", {
 				method: "GET",
 				headers: {
 					"content-type": "application/json",
@@ -45,14 +45,14 @@ class HomePage extends React.Component {
 				code: "",
 			});
 
-// 		if (this.state.code !== "APSM1824")
-// 			return this.setState({
-// 				message: "Incorrect code",
-// 				loading: false,
-// 				email: "",
-// 				password: "",
-// 				code: "",
-// 			});
+		// 		if (this.state.code !== "APSM1824")
+		// 			return this.setState({
+		// 				message: "Incorrect code",
+		// 				loading: false,
+		// 				email: "",
+		// 				password: "",
+		// 				code: "",
+		// 			});
 
 		if (this.state.password.length < 6)
 			return this.setState({
@@ -61,7 +61,7 @@ class HomePage extends React.Component {
 			});
 		this.setState({ loading: true }, () => {
 			let link = this.state.login ? "login" : "register";
-			fetch(`https://dsa-cracker-server.herokuapp.com/${link}`, {
+			fetch(`https://dsa-cracker-server.netlify.app/${link}`, {
 				method: "Post",
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify({
@@ -152,7 +152,7 @@ class HomePage extends React.Component {
 							onChange={this.handleChange}
 							value={this.state.password}
 						/>
-								{/*	<input
+						{/*	<input
 							className="form__input"
 							placeholder="Coupon Code"
 							type="text"

@@ -63,7 +63,7 @@
 // 				loader: true,
 // 			},
 // 			() => {
-// 				fetch("https://dsa-cracker-server.herokuapp.com/upload", {
+// 				fetch("https://dsa-cracker-server.netlify.app/upload", {
 // 					method: "post",
 // 					headers: {
 // 						"content-type": "application/json",

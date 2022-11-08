@@ -18,7 +18,7 @@ class ProfilePage extends React.Component {
 		if (!window.localStorage.getItem("token"))
 			return (window.location.href = "/");
 
-		fetch("https://dsa-cracker-server.herokuapp.com/profile", {
+		fetch("https://dsa-cracker-server.netlify.app/profile", {
 			method: "GET",
 			headers: {
 				"content-type": "application/json",
